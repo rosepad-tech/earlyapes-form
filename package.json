@@ -1,0 +1,41 @@
+{
+  "name": "simple-earlyapes-dapp-jf",
+  "version": "1.0.0",
+  "description": "Building a simple dapp used in MetaMask e2e tests.",
+  "scripts": {
+    "deploy": "./deploy.sh",
+    "lint": "eslint . --ext js,json",
+    "lint:fix": "eslint . --fix --ext js,json",
+    "serve-dev": "static-server . --port 9011",
+    "serve": "http-server .",
+    "test": "yarn lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "/contract.js",
+    "/index.html"
+  ],
+  "author": "MetaMask",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "homepage": "",
+  "dependencies": {
+    "@metamask/onboarding": "^1.0.1",
+    "http-server": "^14.1.0"
+  },
+  "devDependencies": {
+    "@metamask/eslint-config": "^2.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-json": "^2.0.1",
+    "static-server": "^2.2.1"
+  }
+}
